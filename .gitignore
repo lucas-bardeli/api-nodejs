@@ -2,6 +2,12 @@
 # Node.js
 node_modules/
 
+# Environments
+.env
+.venv
+env/
+venv/
+
 # Editors/IDEs
 .vs/
 .vscode/
