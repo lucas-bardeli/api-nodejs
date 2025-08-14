@@ -1,12 +1,7 @@
 
 # Node.js
 node_modules/
-
-# Environments
-.env
-.venv
-env/
-venv/
+coverage/
 
 # Editors/IDEs
 .vs/
