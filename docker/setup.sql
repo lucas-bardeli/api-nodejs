@@ -1,1 +1,1 @@
-CREATE DATABASE desafio_test;
+CREATE DATABASE desafio_teste;
