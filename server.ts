@@ -1,11 +1,15 @@
-import fastify from 'fastify'
 import { fastifySwagger } from '@fastify/swagger'
-import { validatorCompiler, serializerCompiler, type ZodTypeProvider, jsonSchemaTransform } from 'fastify-type-provider-zod'
-import { createCourseRoute } from './routes/create-course.ts'
-import { getCourseByIdRoute } from './routes/get-course-by-id.ts'
-import { getCoursesRoute } from './routes/get-courses.ts'
+import fastify from 'fastify'
+import { 
+  validatorCompiler, 
+  serializerCompiler, 
+  type ZodTypeProvider, 
+  jsonSchemaTransform 
+} from 'fastify-type-provider-zod'
+import { createCourseRoute } from './src/routes/create-course.ts'
+import { getCourseByIdRoute } from './src/routes/get-course-by-id.ts'
+import { getCoursesRoute } from './src/routes/get-courses.ts'
 import scalarAPIReference from '@scalar/fastify-api-reference'
-import { loginRoute } from './routes/login.ts'
 
 const server = fastify({
   logger: {
@@ -16,7 +20,7 @@ const server = fastify({
         ignore: 'pid,hostname',
       },
     },
-  },
+  }
 }).withTypeProvider<ZodTypeProvider>()
 
 if (process.env.NODE_ENV === 'development') {
@@ -29,9 +33,12 @@ if (process.env.NODE_ENV === 'development') {
     },
     transform: jsonSchemaTransform,
   })
-  
+
   server.register(scalarAPIReference, {
     routePrefix: '/docs',
+    configuration: {
+      theme: 'kepler',
+    }
   })
 }
 
@@ -41,6 +48,7 @@ server.setSerializerCompiler(serializerCompiler)
 server.register(createCourseRoute)
 server.register(getCourseByIdRoute)
 server.register(getCoursesRoute)
-server.register(loginRoute)
 
-export { server }
+server.listen({ port: 3333 }).then(() => {
+  console.log('HTTP server running!')
+})

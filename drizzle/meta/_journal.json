@@ -5,71 +5,15 @@
     {
       "idx": 0,
       "version": "7",
-      "when": 1755039609341,
-      "tag": "0000",
+      "when": 1755563452728,
+      "tag": "0000_nasty_senator_kelly",
       "breakpoints": true
     },
     {
       "idx": 1,
       "version": "7",
-      "when": 1755039781603,
-      "tag": "0001",
-      "breakpoints": true
-    },
-    {
-      "idx": 2,
-      "version": "7",
-      "when": 1755125030631,
-      "tag": "0002",
-      "breakpoints": true
-    },
-    {
-      "idx": 3,
-      "version": "7",
-      "when": 1755125129746,
-      "tag": "0003",
-      "breakpoints": true
-    },
-    {
-      "idx": 4,
-      "version": "7",
-      "when": 1755125854003,
-      "tag": "0004",
-      "breakpoints": true
-    },
-    {
-      "idx": 5,
-      "version": "7",
-      "when": 1755126256042,
-      "tag": "0005",
-      "breakpoints": true
-    },
-    {
-      "idx": 6,
-      "version": "7",
-      "when": 1755209742717,
-      "tag": "0006",
-      "breakpoints": true
-    },
-    {
-      "idx": 7,
-      "version": "7",
-      "when": 1755209769559,
-      "tag": "0007",
-      "breakpoints": true
-    },
-    {
-      "idx": 8,
-      "version": "7",
-      "when": 1755209816419,
-      "tag": "0008",
-      "breakpoints": true
-    },
-    {
-      "idx": 9,
-      "version": "7",
-      "when": 1755210017475,
-      "tag": "0009",
+      "when": 1755563992950,
+      "tag": "0001_third_silver_sable",
       "breakpoints": true
     }
   ]
