@@ -14,6 +14,12 @@ docker compose up -d
 docker compose down
 ```
 ```
+docker compose start
+```
+```
+docker compose stop
+```
+```
 npm run db:generate
 ```
 ```
@@ -21,4 +27,7 @@ npm run db:migrate
 ```
 ```
 npm run db:studio
+```
+```
+npm run db:seed
 ```
