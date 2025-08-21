@@ -31,3 +31,6 @@ npm run db:studio
 ```
 npm run db:seed
 ```
+```
+npm run test
+```
