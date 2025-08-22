@@ -23,6 +23,9 @@ docker compose stop
 npm run db:generate
 ```
 ```
+npx drizzle-kit generate --custom
+```
+```
 npm run db:migrate
 ```
 ```

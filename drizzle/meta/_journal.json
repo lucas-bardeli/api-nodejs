@@ -43,6 +43,34 @@
       "when": 1755653739131,
       "tag": "0005_cultured_tarot",
       "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1755818703058,
+      "tag": "0006_quick_carnage",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "7",
+      "when": 1755818892921,
+      "tag": "0007_modern_retro_girl",
+      "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "7",
+      "when": 1755819037152,
+      "tag": "0008_cultured_purifiers",
+      "breakpoints": true
+    },
+    {
+      "idx": 9,
+      "version": "7",
+      "when": 1755819365143,
+      "tag": "0009_bored_zeigeist",
+      "breakpoints": true
     }
   ]
 }

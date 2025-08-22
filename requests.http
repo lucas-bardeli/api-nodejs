@@ -11,4 +11,15 @@ GET http://localhost:3333/courses?orderBy=title
 
 ###
 
-GET http://localhost:3333/courses/33d0d497-4a7d-4f2c-abb0-7cd583942bb6
+GET http://localhost:3333/courses/b0edd5fa-0049-49fb-9e8a-23de4732f608
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1ODkzMTM5Ni03YTQyLTQ5NzgtYmNlNi01OTZkNTEwMzAyM2EiLCJyb2xlIjoic3R1ZGVudCIsImlhdCI6MTc1NTgyNjAxOH0.CeAKlho7ssfSNlnrfbWYcT-xLNlfONGN4aiY6OdyvIE
+
+###
+
+POST http://localhost:3333/sessions
+Content-Type: application/json
+
+{
+  "email": "Anthony.Costa@gmail.com",
+  "password": "123456"
+}

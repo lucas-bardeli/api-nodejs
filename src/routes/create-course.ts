@@ -15,15 +15,15 @@ export const createCourseRoute: FastifyPluginAsyncZod = async (server) => {
         201: z.object({ courseId: z.uuid() }).describe('Curso criado com sucesso!')
       }
     },
-    }, async (request, reply) => {
+  }, async (request, reply) => {
 
-  const courseTitle = request.body.title
+    const courseTitle = request.body.title
 
-  const result = await db
-    .insert(courses)
-    .values({ title: courseTitle })
-    .returning()
+    const result = await db
+      .insert(courses)
+      .values({ title: courseTitle })
+      .returning()
 
-  return reply.status(201).send({ courseId: result[0].id })
+    return reply.status(201).send({ courseId: result[0].id })
   })
 }
