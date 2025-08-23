@@ -1,8 +1,9 @@
 POST http://localhost:3333/courses
 Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1ODkzMTM5Ni03YTQyLTQ5NzgtYmNlNi01OTZkNTEwMzAyM2EiLCJyb2xlIjoibWFuYWdlciIsImlhdCI6MTc1NTkwNzkzM30.ago3IXip0RrGzJWb1XyPiIeXBK1vIf-SuzzNvjB5k-Y
 
 {
-  "title": "Curso de Cobol"
+  "title": "Curso de React"
 }
 
 ###
@@ -12,7 +13,7 @@ GET http://localhost:3333/courses?orderBy=title
 ###
 
 GET http://localhost:3333/courses/b0edd5fa-0049-49fb-9e8a-23de4732f608
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1ODkzMTM5Ni03YTQyLTQ5NzgtYmNlNi01OTZkNTEwMzAyM2EiLCJyb2xlIjoic3R1ZGVudCIsImlhdCI6MTc1NTgyNjAxOH0.CeAKlho7ssfSNlnrfbWYcT-xLNlfONGN4aiY6OdyvIE
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1ODkzMTM5Ni03YTQyLTQ5NzgtYmNlNi01OTZkNTEwMzAyM2EiLCJyb2xlIjoibWFuYWdlciIsImlhdCI6MTc1NTkwNzkzM30.ago3IXip0RrGzJWb1XyPiIeXBK1vIf-SuzzNvjB5k-Y
 
 ###
 
